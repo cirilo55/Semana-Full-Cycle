@@ -1,0 +1,30 @@
+SOBRE O PROJETO:
+é uma solução para simularmos transferencias de valores entre bancos ficticios atraves de chaves(email, cpf)
+Uma transação nao pode ser perdida mesmo que sistema esteja fora do ar.
+
+Code Pix:
+Vai ser um microserviço responsavel por intermedia transação bancarias.
+recebera a transação de transferencia transferencias
+encaminha a transalçao para o banco de destino entre
+recebe a confirmação do banco de destino
+marca a transação como completa.
+ 
+Dinamica do processo 
+Registra a transaçao
+muda stauts para confirmd
+informa banco de origem que a transação foi confirmada pelo banco de destino com status "cofirmed"
+
+principais desafios
+
+comunicacao rapida e eficiente. ( rest nao é a mais eficiente ??? )
+consulta instantane das chaves ( sincrono )
+
+Arquitetura hexagonal
+
+
+
+LER SOBRE:
+PROTOCOL BUFFERS
+gRPC
+RPC
+REST X gRPC
